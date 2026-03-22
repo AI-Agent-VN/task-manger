@@ -133,6 +133,7 @@ services:
       BUCKET_NAME: ${AWS_S3_BUCKET_NAME:-uploads}
     networks:
       - default
+      - shared-services
     depends_on:
       - web
       - api
